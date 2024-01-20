@@ -24,14 +24,14 @@ public class TripBooking {
     @ManyToOne
     private Customer customer;
 
-    public TripBooking(String fromLocation, String toLocation, int distanceInKm, TripStatus tripStatus, int bill, Driver driver, Customer customer) {
+    public TripBooking(String fromLocation, String toLocation, int distanceInKm, TripStatus confirmed, int bill, Driver d, Customer customer) {
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
         this.distanceInKm = distanceInKm;
         this.tripStatus = tripStatus;
-        this.bill = bill;
+        this.bill = this.bill;
         this.driver = driver;
-        this.customer = customer;
+        this.customer = this.customer;
     }
 
     public TripBooking() {
